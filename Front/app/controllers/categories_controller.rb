@@ -75,7 +75,5 @@ class CategoriesController < ApplicationController
       params.require(:category).permit(:nombre, :description, :activo, :service_id)
     end
 
-    def passage_params
-     params.require(:passage).permit(:service_id)
-   end
+  
 end

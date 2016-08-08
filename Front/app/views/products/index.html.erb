@@ -23,7 +23,7 @@
         <td><%= product.price %></td>
         <td><%= product.cant %></td>
         <td><%= product.activo %></td>
-        <td><%= product.make_id %></td>
+        <td><%= Make.find(product.make_id).nombre %></td>        
         <td class="active"><%= link_to 'Show', product %></td>
         <td class="success"><%= link_to 'Edit', edit_product_path(product) %></td>
         <td class="danger"><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
