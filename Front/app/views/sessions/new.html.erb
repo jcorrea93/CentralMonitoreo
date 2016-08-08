@@ -1,0 +1,21 @@
+
+
+<div class = "container">
+	<div class="wrapper">
+		<div  name="Login_Form" class="form-signin">    
+		   <%= form_for @session, url: login_path do |f| %>
+		    <h3 class="form-signin-heading">Welcome! Please Sign In</h3>
+			  <hr class="colorgraph"><br>
+			  
+	<%= f.label :user_name %>
+	<%= f.text_field :user_name, class: 'form-control' %>
+
+	<%= f.label :password %>
+	<%= f.password_field :password, class: 'form-control' %>
+
+	<%= f.submit 'login', class: 'btn btn-primary' %>
+
+	<% end %>	
+	</div>
+	</div>
+</div>

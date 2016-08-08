@@ -1,0 +1,32 @@
+# == Schema Information
+#
+# Table name: products
+#
+#  id          :integer          not null, primary key
+#  nombre      :string
+#  description :string
+#  price       :integer
+#  cant        :integer
+#  activo      :boolean
+#  make_id     :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  description: MyString
+  price: 
+  cant: 
+  activo: false
+  make: one
+
+two:
+  nombre: MyString
+  description: MyString
+  price: 
+  cant: 
+  activo: false
+  make: two

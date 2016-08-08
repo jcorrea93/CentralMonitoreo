@@ -1,0 +1,26 @@
+# == Schema Information
+#
+# Table name: categories
+#
+#  id          :integer          not null, primary key
+#  nombre      :string
+#  description :string
+#  activo      :boolean
+#  service_id  :integer
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nombre: MyString
+  description: MyString
+  activo: false
+  service: one
+
+two:
+  nombre: MyString
+  description: MyString
+  activo: false
+  service: two
